@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href=".\style.css">
+        <title>탈모봇 이용약관</title>
+        <meta charset="utf-8">
+        <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false"></body>
+        <style>
+            body {
+                background-image: url('웹페이지배경.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #btn{
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                margin-right: 4px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                margin-left: 3px;
+            }
+            #btn_group button{
+                border: 1px solid skyblue;
+                background-color: rgba(0,0,0,0);
+                color: skyblue;
+                padding: 5px;
+            }
+            #btn_group button:hover{
+                color: white;
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>이용약관</h2>
+        <ul>
+            <li>
+                <h3>탈모봇(이하 봇)의 이용약관
+                    <br>
+                </h3>
+                <div>1. 사용자는 'ㅌ 가입'으로 가입함과 동시에 이용약관과 개인정보 처리방침에 동의하는 것으로 간주합니다.</div>
+                <div>2. 사용자는 봇이 제공하는 모든 서비스를 이용할 수 있지만,<br>블랙리스트에 등재된 사용자는 서비스를 이용하실 수 없습니다. (추가예정)</div>
+            </li>
+        </ul>
+        <div id="btn_group">
+            <li>
+                <input type="checkbox" checked disabled> <button id="btn" onclick="location.href='index.html'">메인으로</button>
+            </li>
+            <p></p>
+            <li>
+                <input type="checkbox" checked disabled> <button id="btn" onclick="location.href='개인정보처리방침.html'">★ 개인정보 처리방침 ★</button>
+            </li>
+        </div>
+    </body>
+</html>

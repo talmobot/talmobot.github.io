@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href=".\style.css">
+        <title>탈모봇 공식 웹</title>
+        <meta charset="utf-8">
+        <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false"></body>
+        <style>
+            body {
+                background-image: url('웹페이지배경.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #btn{
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                margin-right: 4px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                margin-left: 3px;
+            }
+            #btn_group button{
+                border: 1px solid skyblue;
+                background-color: rgba(0,0,0,0);
+                color: skyblue;
+                padding: 5px;
+            }
+            #btn_group button:hover{
+                color: white;
+                background-color: skyblue;
+            }
+        </style>
+        <script language="javascript">
+            function time() {
+            var time= new Date();
+                document.getElementById("now").innerHTML=`${time.getHours()}시 ${time.getMinutes()}분 ${time.getSeconds()}초`;
+                setInterval("time()", 1000);
+            }
+        </script>
+    </head>
+    <body onload="time()">
+        <h1>탈모봇 공식 웹페이지 입니다.</h1>
+        <h2>이 웹페이지는 PC기반으로 제작되었습니다.</h2>
+        <ul>
+            <li>
+                <a href="https://top.gg/bot/556664157240295425" >
+                    <img src="https://top.gg/api/widget/status/556664157240295425.svg" alt="탈모봇" />
+                </a>
+            </li>
+            <div id="btn_group">
+                <li>
+                    <input type="checkbox" checked disabled> <button id="btn" onclick="location.href='https://discord.com/oauth2/authorize?client_id=556664157240295425&permissions=314470&scope=bot'">봇 초대</button>
+                </li>
+                <p></p>
+                <li>
+                    <input type="checkbox" checked disabled> <button id="btn" onclick="location.href='https://discord.gg/bAWqHVk'">공식 디스코드 서버</button>
+                </li>
+                <p>───────────────────────────</p>
+                <li>
+                    <input type="checkbox" checked disabled> <button id="btn" onclick="location.href='/tos'">★ 이용약관 ★</button>
+                </li>
+                <p></p>
+                <li>
+                    <input type="checkbox" checked disabled> <button id="btn" onclick="location.href='/privacypolicy'">★ 개인정보 처리방침 ★</button>
+                </li>
+            </div>
+        </ul>
+        <h2>위의 이용약관과 개인정보 처리방침을 확인해주세요.</h2>
+        <h3>이용약관 및 개인정보 처리방침 최종 수정 날짜<br>2020.11.12 PM 6:00, KST<br>현재시간: <span id="now"></span></h3>
+    </body>
+</html>
